@@ -14,10 +14,12 @@ header {
     width: 100%;
     height: 60px;
 }
+
 header nav {
     display: flex;
     justify-content: flex-end;
 }
+
 header nav .nav-right-section {
     width: 250px;
     height: auto;
@@ -26,10 +28,12 @@ header nav .nav-right-section {
     justify-content: center;
     align-items: center;
 }
+
 nav .nav-right-section a {
     margin-right: 10px;
     color: #000000;
 }
+
 nav .nav-right-section .menu-icon {
     background-image: url('https://static.thenounproject.com/png/756729-200.png');
     background-repeat: no-repeat;
@@ -38,6 +42,7 @@ nav .nav-right-section .menu-icon {
     width: 25px;
     height: 25px;
 }
+
 nav .nav-right-section img {
     border-radius: 50%;
     margin-left: 10px;
@@ -48,11 +53,13 @@ main {
     margin-top: 150px;
     text-align: center;
 }
+
 main .main-logo {
     width: 530px;
     margin: 0 auto;
     margin-bottom: 35px;
 }
+
 main .main-logo img {
     width: 300px;
 }
@@ -62,6 +69,7 @@ main .main-input {
     margin: 0 auto;
     margin-bottom: 35px;
 }
+
 main .main-input-container {
     width: 525px;
     border-radius: 100px;
@@ -70,16 +78,19 @@ main .main-input-container {
     justify-content: center;
     align-items: center;
 }
+
 main .main-input input {
     width: 450px;
     height: 40px;
     border: none;
     outline: none;
 }
+
 main .main-input-container:hover {
     box-shadow: 0 1px 6px 0 #20212447;
     border-color: #dfe1e500;
 }
+
 main .main-input .search-icon {
     background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
     background-repeat: no-repeat;
@@ -90,6 +101,7 @@ main .main-input .search-icon {
     opacity: 0.4;
     padding-left: 13px;
 }
+
 main .main-input .micro-icon {
     background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
     background-repeat: no-repeat;
@@ -104,9 +116,11 @@ main .main-buttons {
     width: 530px;
     margin: 0 auto;
 }
+
 main .main-buttons div {
     display: inline-block;
 }
+
 main .main-buttons button {
     height: 36px;
     background-color: #f2f2f2;
@@ -117,9 +131,10 @@ main .main-buttons button {
     padding: 0 15px;
     margin-right: 15px;
 }
+
 main .main-buttons button:hover {
     border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     color: #222;
     background-color: #f8f8f8;
 }
@@ -136,6 +151,7 @@ footer {
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
 }
+
 footer ul {
     margin: 10px;
     list-style: none;
@@ -150,6 +166,7 @@ footer .footer-left {
 footer .footer-right {
     justify-self: right;
 }
+
 footer ul li a {
     margin: 10px;
     color: #5f6368;
