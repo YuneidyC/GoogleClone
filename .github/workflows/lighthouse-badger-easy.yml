@@ -24,7 +24,7 @@ on:
   # page_build:
   # schedule: # Check your schedule here => https://crontab.guru/
   schedule:
-      - cron: '0 0 1 *'
+      - cron: '0 0 1 * *'
   #   - cron: '55 23 * * 0' # e.g. every Sunday at 23:55
   # 
   # THAT'S IT; YOU'RE DONE;
