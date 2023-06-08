@@ -14,8 +14,7 @@ This project was developed during the course [**HTML and CSS Practical**](https:
 </p>
 
 # Lighthouse
-
-![Lighthouse results](./lighthouse_results/desktop/pagespeed.svg "Lighthouse report")
+<img src="./lighthouse_results/desktop/pagespeed.svg" alt="Lighthouse report" width="800">
 
 # Test it out
 
