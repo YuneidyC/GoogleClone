@@ -13,6 +13,10 @@ This project was developed during the course [**HTML and CSS Practical**](https:
   </a>
 </p>
 
+# Lighthouse
+
+![Lighthouse results](./lighthouse_results/desktop/pagespeed.svg "Lighthouse report")
+
 # Test it out
 
 You can test this [**here**](https://google-clone-yuneidyc.vercel.app/).
