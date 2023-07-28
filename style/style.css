@@ -14,12 +14,10 @@ header {
     width: 100%;
     height: 60px;
 }
- 
 header nav {
     display: flex;
     justify-content: flex-end;
 }
-
 header nav .nav-right-section {
     width: 250px;
     height: auto;
@@ -28,12 +26,10 @@ header nav .nav-right-section {
     justify-content: center;
     align-items: center;
 }
-
 nav .nav-right-section a {
     margin-right: 10px;
     color: #000000;
 }
-
 nav .nav-right-section .menu-icon {
     background-image: url('https://static.thenounproject.com/png/756729-200.png');
     background-repeat: no-repeat;
@@ -42,26 +38,24 @@ nav .nav-right-section .menu-icon {
     width: 25px;
     height: 25px;
 }
-
 nav .nav-right-section img {
     border-radius: 50%;
     margin-left: 10px;
 }
 
-
 main {
+    width: 100%;
     margin-top: 150px;
     text-align: center;
 }
-
 main .main-logo {
-    width: 530px;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 35px;
 }
-
 main .main-logo img {
-    width: 300px;
+    width: auto;
+    height: 92px;
 }
 
 main .main-input {
@@ -69,28 +63,27 @@ main .main-input {
     margin: 0 auto;
     margin-bottom: 35px;
 }
-
 main .main-input-container {
-    width: 525px;
+    width: auto;
     border-radius: 100px;
     border: 1px solid #dfe1e5;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 584px;
+    min-width: 230px;
+    position: relative;
 }
-
 main .main-input input {
     width: 450px;
     height: 40px;
     border: none;
     outline: none;
 }
-
 main .main-input-container:hover {
     box-shadow: 0 1px 6px 0 #20212447;
     border-color: #dfe1e500;
 }
-
 main .main-input .search-icon {
     background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
     background-repeat: no-repeat;
@@ -99,7 +92,12 @@ main .main-input .search-icon {
     width: 18px;
     height: 18px;
     opacity: 0.4;
-    padding-left: 13px;
+    position: absolute;
+    left: 10px;
+}
+
+input {
+    border-radius: 100px;
 }
 
 main .main-input .micro-icon {
@@ -110,48 +108,52 @@ main .main-input .micro-icon {
     width: 18px;
     height: 18px;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 }
 
 main .main-buttons {
-    width: 530px;
+    width: 100%;
     margin: 0 auto;
 }
-
-main .main-buttons div {
+.main-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+button {
     display: inline-block;
 }
-
-main .main-buttons button {
+button {
+    width: 119px;
     height: 36px;
-    background-color: #f2f2f2;
     border: 0;
     font-size: 14px;
     color: #5f6368;
     border-radius: 5px;
-    padding: 0 15px;
-    margin-right: 15px;
-}
-
-main .main-buttons button:hover {
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    color: #222;
+    margin: 0 15px;
     background-color: #f8f8f8;
+    min-width: 119px;
+}
+button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    cursor: pointer;
 }
 
 footer {
     width: 100%;
-    height: 50px;
+    height: auto;
     position: absolute;
     bottom: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
     align-items: center;
     font-size: 13px;
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
 }
-
 footer ul {
     margin: 10px;
     list-style: none;
@@ -166,8 +168,54 @@ footer .footer-left {
 footer .footer-right {
     justify-self: right;
 }
-
 footer ul li a {
     margin: 10px;
     color: #5f6368;
+}
+
+@media (max-width: 703px) {
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: content;
+        align-items: center;
+    }
+
+    .main-logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    main .main-input {
+        width: 80%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    footer .footer-left,
+    footer .footer-right {
+        flex-wrap: wrap;
+        justify-self: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 359px) {
+    footer .footer-left {
+        justify-content: space-evenly;
+    }
+
+    footer ul:first-child {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    footer ul:first-child li:last-child {
+        padding-top: 20px;
+    }
 }
